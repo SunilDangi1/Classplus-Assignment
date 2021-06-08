@@ -49,7 +49,7 @@ export default class App extends React.Component {
 		this.scroll = this.scroll.bind(this);
 	}
 	/*infinite scrolling */
-	componentMount() {
+	componentDidMount() {
 
 		window.onscroll = throttle(() => {
 			if (areaAvailable()) return;
